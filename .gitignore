@@ -1,3 +1,4 @@
 _*
+!/src/css/_datepicker.scss
 *.map
 node_modules
