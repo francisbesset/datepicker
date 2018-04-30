@@ -228,10 +228,12 @@ export default {
   setStartDate(date) {
     if (isDate(date) || isString(date)) {
       this.startDate = this.parseDate(date);
+    } else {
+      this.startDate = null;
+    }
 
-      if (this.built) {
-        this.render();
-      }
+    if (this.built) {
+      this.render();
     }
   },
 
@@ -243,10 +245,12 @@ export default {
   setEndDate(date) {
     if (isDate(date) || isString(date)) {
       this.endDate = this.parseDate(date);
+    } else {
+      this.endDate = null;
+    }
 
-      if (this.built) {
-        this.render();
-      }
+    if (this.built) {
+      this.render();
     }
   },
 
